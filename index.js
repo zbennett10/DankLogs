@@ -1,4 +1,4 @@
-exports.DankLogs = function({dispatch}) {
+module.exports = function({dispatch}) {
     return next => action => {
         console.log('%cAction:','color: blue; font-size: x-large', action);
         console.log('%cAction type:', 'color: blue; font-size: x-large', action.type);
