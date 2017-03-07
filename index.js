@@ -7,13 +7,16 @@ module.exports = function({dispatch}) {
             for(let prop in action.payload) {
                 console.log('%cProperty: Value', 'color: red; font-size: medium', `${prop}: ${action.payload[prop]}`);
             }
+            next(action);
         }
 
         if(action.payload.hasOwnProperty('length') && typeof action.payload !== 'string') {
             action.payload.forEach(item => {
                 console.log(`%cItem at index ${action.payload.indexOf(item)}:`, item);
             });
+            next(action);
         }
+        next(action);
 
     }
 }
