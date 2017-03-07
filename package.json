@@ -1,4 +1,7 @@
 {
   "name": "dank-logs",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "entry point": "dank_logs.js",
+  "author": "Zachary Bennett <bennett.zachary@outlook.com>",
+  "license": "ISC"
 }
